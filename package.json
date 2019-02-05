@@ -10,7 +10,7 @@
 	"categories": [
 		"Other"
 	],
-	"icon": "https://blog.silkage.net/wp-content/uploads/2019/02/favicon.ico",
+	"icon": "images/icon.png",
 	"activationEvents": [
 		"onCommand:extension.ApracTool"
 	],
@@ -20,8 +20,8 @@
 			"command": "extension.ApracTool",
 			"title": "新建Aprac模板",
 			"icon": {
-				"dark": "https://blog.silkage.net/wp-content/uploads/2019/02/favicon.ico",
-				"light": "https://blog.silkage.net/wp-content/uploads/2019/02/favicon.ico"
+				"dark": "images/icon.png",
+				"light": "images/icon.png"
 			},
 			"category": "ApracTool"
 		}],
@@ -57,5 +57,9 @@
 		"tslint": "^5.12.1",
 		"@types/node": "^8.10.25",
 		"@types/mocha": "^2.2.42"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SilkageNet/ApracTool.git"
 	}
 }
