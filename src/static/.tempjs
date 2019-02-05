@@ -1,0 +1,16 @@
+Type.registerNamespace('ApracJs.{Namespace}');
+
+ApracJs.{NamespaceAndFileName}Action = function () {
+    ApracJs.{NamespaceAndFileName}Action.initializeBase(this);
+};
+
+ApracJs.{NamespaceAndFileName}Action.prototype = {
+    initialize: function () {
+        ApracJs.{NamespaceAndFileName}Action.callBaseMethod(this, 'initialize');
+    },
+
+    dispose: function () {
+        ApracJs.{NamespaceAndFileName}Action.callBaseMethod(this, 'dispose');
+    }
+};
+ApracJs.{NamespaceAndFileName}Action.registerClass('ApracJs.{NamespaceAndFileName}Action', Sys.UI.PageAction);
