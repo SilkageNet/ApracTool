@@ -3,7 +3,7 @@
 	"displayName": "ApracTool",
 	"description": "Aprac工具箱,让你的apracjs开发之旅方便快捷。",
 	"version": "0.0.3",
-	"publisher": "ApracTool",
+	"publisher": "Silkage",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
