@@ -2,7 +2,7 @@
 	"name": "apractool",
 	"displayName": "ApracTool",
 	"description": "Aprac工具箱,让你的apracjs开发之旅方便快捷。",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "ApracTool",
 	"engines": {
 		"vscode": "^1.30.0"
@@ -16,22 +16,26 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [{
-			"command": "extension.ApracTool",
-			"title": "新建Aprac模板",
-			"icon": {
-				"dark": "images/icon.png",
-				"light": "images/icon.png"
-			},
-			"category": "ApracTool"
-		}],
-		"menus": {
-			"explorer/context": [{
+		"commands": [
+			{
 				"command": "extension.ApracTool",
-				"group": "navigation",
-				"when": "explorerResourceIsFolder",
-				"alt": "extension.ApracTool"
-			}]
+				"title": "新建Aprac模板",
+				"icon": {
+					"dark": "images/icon.png",
+					"light": "images/icon.png"
+				},
+				"category": "ApracTool"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "extension.ApracTool",
+					"group": "navigation",
+					"when": "explorerResourceIsFolder",
+					"alt": "extension.ApracTool"
+				}
+			]
 		},
 		"configuration": {
 			"title": "ApracTool config",
