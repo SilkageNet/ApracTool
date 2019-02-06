@@ -1,7 +1,7 @@
 {
 	"name": "apractool",
 	"displayName": "ApracTool",
-	"description": "ApracTool",
+	"description": "Aprac工具箱,让你的apracjs开发之旅方便快捷。",
 	"version": "0.0.1",
 	"publisher": "ApracTool",
 	"engines": {

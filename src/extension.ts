@@ -38,6 +38,10 @@ const createTemplate = (templateName: string, dirPath: string) => {
 	const wwwPath = path.join(<string>vscode.workspace.rootPath, rootDir);
 	const templateArray: string[] = templateName.split('.');
 	const name = templateArray.pop();
+	if (!name) {
+		showMessage('请输入正确的模板名');
+		return;
+	}
 	const namespce = templateArray.join('.') || (path.resolve(dirPath) === wwwPath ? 'Base' : path.parse(dirPath).name);
 	['gspx', 'js', 'jsx'].forEach(ext => {
 		const fileName = `${name}.${ext}`;
@@ -67,7 +71,7 @@ const createTemplate = (templateName: string, dirPath: string) => {
  *
  * @param {IPathArgs} args
  */
-const apracToolHandler = (args: IPathArgs) => vscode.window.showInputBox({ placeHolder: '请输入模板名称：(包含命名空间,eg:Namespace.Template)' }).then(templateName => createTemplate(<string>templateName, <string>args.fsPath));
+const apracToolHandler = (args: IPathArgs) => vscode.window.showInputBox({ placeHolder: '请输入模板名称：(可包含命名空间,eg:Namespace.Template)' }).then(templateName => createTemplate(<string>templateName, <string>args.fsPath));
 
 /**
  *插件被激活时
@@ -76,7 +80,6 @@ const apracToolHandler = (args: IPathArgs) => vscode.window.showInputBox({ place
  * @param {vscode.ExtensionContext} context
  */
 export function activate(context: vscode.ExtensionContext) {
-	console.log('Welcome to the ApracTool tool!');
 	context.subscriptions.push(vscode.commands.registerCommand('extension.ApracTool', apracToolHandler));
 }
 
