@@ -1,7 +1,7 @@
-# Change Log
-All notable changes to the "ApracTool" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### 0.0.2 2019年2月6日
+* 优化相关功能
 
-## [Unreleased]
-- Initial release
+### 0.0.1 2019年2月5日
+* 测试插件发版
+* 添加新建Aprac模板功能
