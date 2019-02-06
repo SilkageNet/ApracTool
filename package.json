@@ -3,7 +3,7 @@
 	"displayName": "ApracTool",
 	"description": "ApracTool",
 	"version": "0.0.1",
-	"publisher": "Silkage",
+	"publisher": "ApracTool",
 	"engines": {
 		"vscode": "^1.30.0"
 	},
